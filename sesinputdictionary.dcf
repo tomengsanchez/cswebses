@@ -1,0 +1,168 @@
+{
+  "software": "CSPro", 
+  "version": 8.0, 
+  "fileType": "dictionary", 
+  "name": "SESINPUTDICTIONARY_DICT", 
+  "labels": [ { "text": "sesinputdictionary" } ], 
+  "security": {
+    "allowDataViewerModifications": true, 
+    "allowExport": true, 
+    "cachedPasswordMinutes": 0, 
+    "settings": "69376f35ef6388c39e933cb2e0f8eb2f6f190d1a1aced5ac22f83e16263e982e8dfe99b27ab60bc8aa8e27a57fbba83f"
+  }, 
+  "readOptimization": true, 
+  "recordType": {
+    "start": 1, 
+    "length": 1
+  }, 
+  "defaults": {
+    "decimalMark": true, 
+    "zeroFill": false
+  }, 
+  "relativePositions": true, 
+  "levels": [
+    {
+      "name": "SESINPUTDICTIONARY_LEVEL", 
+      "labels": [ { "text": "sesinputdictionary Level" } ], 
+      "ids": {
+        "items": [
+          {
+            "name": "CONTROL_ID", 
+            "labels": [ { "text": "CONTROL NUMBER" } ], 
+            "contentType": "alpha", 
+            "start": 2, 
+            "length": 50
+          }
+        ]
+      }, 
+      "records": [
+        {
+          "name": "RESPONDENTS_PROFILE", 
+          "labels": [ { "text": "Respondents Profile" } ], 
+          "recordType": "1", 
+          "occurrences": {
+            "required": true, 
+            "maximum": 1
+          }, 
+          "items": [
+            {
+              "name": "RESPONDENT_NAME", 
+              "labels": [ { "text": "RESPONDENT NAME" } ], 
+              "contentType": "alpha", 
+              "length": 30
+            }, 
+            {
+              "name": "REPRESENTATIVE_OF_THE_PAP", 
+              "labels": [ { "text": "Representative of the PAP" } ], 
+              "contentType": "numeric", 
+              "length": 1, 
+              "zeroFill": false, 
+              "valueSets": [
+                {
+                  "name": "REPRESENTATIVE_OF_THE_PAP_VS1", 
+                  "labels": [ { "text": "Representative of the PAP" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Yes" } ], 
+                      "pairs": [ { "value": "1" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "No" } ], 
+                      "pairs": [ { "value": "2" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Missing" } ], 
+                      "pairs": [ { "value": "9" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "HOUSEHOLD_NUMBER", 
+              "labels": [ { "text": "Household Number" } ], 
+              "contentType": "numeric", 
+              "length": 2, 
+              "zeroFill": false
+            }
+          ]
+        }, 
+        {
+          "name": "HOUSEHOLD_INFORMATION", 
+          "labels": [ { "text": "Household Information" } ], 
+          "recordType": "2", 
+          "occurrences": {
+            "required": false, 
+            "maximum": 30
+          }, 
+          "items": [
+            {
+              "name": "NAME", 
+              "labels": [ { "text": "NAME" } ], 
+              "contentType": "alpha", 
+              "length": 50
+            }, 
+            {
+              "name": "SEX", 
+              "labels": [ { "text": "Sex" } ], 
+              "contentType": "numeric", 
+              "length": 1, 
+              "zeroFill": false, 
+              "valueSets": [
+                {
+                  "name": "SEX_VS1", 
+                  "labels": [ { "text": "Sex" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Male" } ], 
+                      "pairs": [ { "value": "1" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Female" } ], 
+                      "pairs": [ { "value": "2" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "ETHNICITY", 
+              "labels": [ { "text": "Ethnicity" } ], 
+              "contentType": "numeric", 
+              "length": 2, 
+              "zeroFill": false, 
+              "valueSets": [
+                {
+                  "name": "ETHNICITY_VS1", 
+                  "labels": [ { "text": "Ethnicity" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Tagalog" } ], 
+                      "pairs": [ { "value": "1" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Ilocano" } ], 
+                      "pairs": [ { "value": "2" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Bicolano" } ], 
+                      "pairs": [ { "value": "3" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Cebuano" } ], 
+                      "pairs": [ { "value": "4" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Aklano" } ], 
+                      "pairs": [ { "value": "5" } ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

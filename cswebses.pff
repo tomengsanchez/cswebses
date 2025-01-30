@@ -1,0 +1,11 @@
+﻿[Run Information]
+Version=CSPro 8.0
+AppType=Entry
+
+[Files]
+Application=.\cswebses.ent
+InputData=.\sesdata.csdb
+Paradata=.\cswebses.cslog
+
+[ExternalFiles]
+SESEXTERNAL1_DICT=.\sesexternal.csdb
